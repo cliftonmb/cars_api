@@ -1,0 +1,37 @@
+### INDEX Cars
+GET http://localhost:3000/cars
+
+### CREATE Cars
+POST http://localhost:3000/cars
+content-type: application/json
+
+{
+  "input_make": "Honda",
+  "input_model": "Accord Hybrid",
+  "input_year": 2022,
+  "input_name": "Bronze and Bougie"
+}
+
+
+### SHOW Cars
+GET http://localhost:3000/cars/2
+
+### UPDATE Cars
+PATCH http://localhost:3000/cars/2
+content-type: application/json
+
+{
+  "input_make": "Kia",
+  "input_model": "Murano",
+  "input_year": 2020,
+  "input_name": "Mom's Car?"
+}
+
+### DESTROY Cars
+DELETE http://localhost:3000/cars/5
+
+script is where JS goes
+
+template is HTML
+
+style is CSS
