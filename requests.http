@@ -7,9 +7,10 @@ content-type: application/json
 
 {
   "input_make": "Honda",
-  "input_model": "Accord Hybrid",
-  "input_year": 2022,
-  "input_name": "Bronze and Bougie"
+  "input_model": "Accord",
+  "input_year": 1997,
+  "input_name": "Bronze and Bougie",
+  "input_image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4ELWSU8NxFQ_4iaoTmtMGPIkXkrIrcZu20Q&usqp=CAU"
 }
 
 
@@ -17,21 +18,13 @@ content-type: application/json
 GET http://localhost:3000/cars/2
 
 ### UPDATE Cars
-PATCH http://localhost:3000/cars/2
+PATCH http://localhost:3000/cars/1
 content-type: application/json
 
 {
-  "input_make": "Kia",
-  "input_model": "Murano",
-  "input_year": 2020,
-  "input_name": "Mom's Car?"
+  "input_image_url": "image url here"
 }
 
 ### DESTROY Cars
-DELETE http://localhost:3000/cars/5
+DELETE http://localhost:3000/cars/7
 
-script is where JS goes
-
-template is HTML
-
-style is CSS

@@ -10,7 +10,8 @@ class CarsController < ApplicationController
       make: params[:input_make],
       model: params[:input_model],
       year: params[:input_year],
-      name: params[:input_name]
+      name: params[:input_name],
+      image_url: params[:input_image_url]
     )
     car.save
     render json: car
@@ -27,6 +28,7 @@ class CarsController < ApplicationController
     car.model = params[:input_model] || car.model
     car.year = params[:input_year] || car.year
     car.name = params[:input_name] || car.name
+    car.image_url = params[:input_image_url] || car.image_url
 
     car.save
     render json: car
