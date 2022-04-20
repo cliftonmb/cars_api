@@ -1,3 +1,5 @@
+# jwt: eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDk3MzU0Nzd9.ekupC8h53BgI2OihbhDEBTvqTUkzYB-giJ8PMGTb2S0
+
 ### INDEX Cars
 GET http://localhost:3000/cars
 
@@ -28,3 +30,22 @@ content-type: application/json
 ### DESTROY Cars
 DELETE http://localhost:3000/cars/7
 
+### CREATE Users (SIGNUP)
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "input_name": "Chas",
+  "input_email": "chas@email",
+  "input_password": "password",
+  "input_password_confirmation": "password"
+}
+
+### CREATE Sessions (LOGIN)
+POST  http://localhost:3000/sessions
+Content-Type: application/json
+
+{
+  "input_email": "tt@email",
+  "input_password": "password"
+}
